@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Servlets</display-name>
+  <welcome-file-list>
+  	<welcome-file>home.html</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  <servlet>
+  <servlet-name>firstservlet</servlet-name>
+  <servlet-class>servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>firstservlet</servlet-name>
+  <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>secoundservlet</servlet-name>
+  <servlet-class>servlet.Formservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>secoundservlet</servlet-name>
+  <url-pattern>/Formservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>form2servlet</servlet-name>
+  <servlet-class>servlet.Form1servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>form2servlet</servlet-name>
+  <url-pattern>/Form1servlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  <servlet-name>hello</servlet-name>
+  <servlet-class>servlet.S1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>hello</servlet-name>
+  <url-pattern>/s1</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+  <servlet-name>s2</servlet-name>
+  <servlet-class>servlet.S2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>s2</servlet-name>
+  <url-pattern>/ss1</url-pattern>
+  </servlet-mapping>
+
+	<servlet>
+	<servlet-name>servletpractice</servlet-name>
+	<servlet-class>servlet.servletprogram</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+	<servlet-name>servletpractice</servlet-name>
+	<url-pattern>/servlet1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>servletcrud</servlet-name>
+	<servlet-class>servlet.ServletCrud</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+	<servlet-name>servletcrud</servlet-name>
+	<url-pattern>/ServletCrud</url-pattern>
+	</servlet-mapping>	
+	
+	
+	<context-param>
+		<param-name>dbUrl</param-name>
+		<param-value>jdbc:mysql://localhost:3306/mydb</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbUser</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbPassword</param-name>
+		<param-value>umar25</param-value>
+	</context-param>
+   <servlet>
+    <servlet-name>readUserServlet</servlet-name>
+    <servlet-class>servlet.CreateUserServlet </servlet-class>
+   <!--  <init-param>
+    <param-name>dbUrl</param-name>
+    <param-value>jdbc:mysql://localhost/mydb</param-value>
+    </init-param>
+     <init-param>
+    <param-name>dbUser</param-name>
+    <param-value>root</param-value>
+    </init-param>
+     <init-param>
+    <param-name>dbPassword</param-name>
+    <param-value>root</param-value>
+    </init-param> -->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>readUserServlet</servlet-name>
+    <url-pattern>/readUsersServlet</url-pattern>
+      </servlet-mapping>
+      
+      
+  <servlet>
+  <servlet-name>Source</servlet-name>
+  <servlet-class>servlet.SourceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Source</servlet-name>
+  <url-pattern>/SourceServlet</url-pattern>
+  </servlet-mapping>
+  
+        
+  <servlet>
+  <servlet-name>Source1</servlet-name>
+  <servlet-class>servlet.TargetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Source1</servlet-name>
+  <url-pattern>/targetServlet</url-pattern>
+  </servlet-mapping>
+  
+ 	<servlet>
+  <servlet-name>session</servlet-name>
+  <servlet-class>Session.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>session</servlet-name>
+  <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+ 	
+ 	<servlet>
+  <servlet-name>session1</servlet-name>
+  <servlet-class>Session.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>session1</servlet-name>
+  <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  
+  			
+
+</web-app>
+
+
